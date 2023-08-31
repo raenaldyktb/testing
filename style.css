@@ -1,0 +1,154 @@
+
+
+/* Mobile default */
+
+
+/* navbar */
+html,body {
+    height:100%;
+  }
+  
+
+/* batas navbar */
+nav .navbar-nav .nav-link,
+nav .navbar-brand {
+   color: white !important; 
+}
+
+.nav-link{
+    margin-left: 4px;
+    font-family: roboto, bold;
+}
+
+.card-columns {
+    padding: 24px;
+}
+
+.show {
+    margin-left: auto !important;
+}
+
+/* jumbotron */
+.jumbotron {
+    background-image: url(asset/bg6.jpg);  
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.jumbotron .display-4 {
+    font-family: 'Black Ops One', cursive;    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 2000; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .content-jumbotron {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.card-deck{
+    margin: px;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin: 50px; /* Added */
+}
+
+
+
+
+/* tampilan desktop */
+@media (min-width: 992px) { 
+    
+
+    .nav-link:hover::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid blue;
+        width:50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -9px;
+    }
+    
+    .jumbotron {
+        /* background-image: url(asset/bg3.jpg) !important;  
+        height: 540px;
+        margin-top: -20px;
+        background-size: cover;
+        position: relative;
+        background-position: center ;
+        background-repeat: no-repeat; */
+        /* background-image: url(asset/bg3.jpg); */
+        height: 540px;
+        font-size: 46px;
+        /* background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative; */
+              
+    
+    }
+    .jumbotron .content-jumbotron {
+        font-size: 28px;
+    }
+
+    /* info panel */
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.info-panel img {
+    width: auto;
+    height: 240px;
+    margin-top: 10px;
+    margin-right:  20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 20px;
+}
+
+
+
+ }

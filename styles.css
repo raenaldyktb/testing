@@ -1,0 +1,22 @@
+body {
+  margin: 0 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover ;
+}
+
+.container {
+    width: 150px;
+    height: 100px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+ 
+}
+
+.mySlides {
+  display: none;
+  /* animation: fade 10s ease-in-out infinite; */
+
+}
+
